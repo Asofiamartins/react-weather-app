@@ -1,5 +1,15 @@
+.WeatherDetails {
+    margin-top: 40px;
+}
+.WeatherDetails h3 {
+    font-size: 20px;
+}
 .WeatherDetails p {
-    color: blue;
     font-family: "lato", sans-serif;
     font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    margin: 0 auto;
+    padding-bottom: 10px;
+
 }
