@@ -1,21 +1,26 @@
+.weather{
+    padding: 10px;
+}
 .weatherDescription p {
     margin: 0 auto;
-    text-align: center;
     font-family: "Lato", sans-serif;
+    text-align: center;
     font-weight: 400;
     font-size: 14px;
-    color: #9A5229;
+    color: black;
     }
-.weatherDescription img{
-    width: 300px;
+.weather img{
+    width: 250px;
     margin: 0 auto;
-}
+    display: block;
+    padding: auto;
+   }
 .weatherInfo   {
     margin: 0 auto;
     display: inline-block;
     padding-top: 40px;
     padding-left: 15px;
-    padding-left: 0px;
+        
 }
 .weatherInfo .col{
     padding-right: 0px;
@@ -41,6 +46,7 @@
     font-weight: 400;
     color: #9A5229;
     line-height: 16px;
+    color: black;
    }
 
 .weatherInfo .units {
@@ -49,4 +55,5 @@
     padding-left: 5px;
     font-size: 15px;
     font-weight: 500;
+    color: black;
 }

@@ -7,12 +7,12 @@ import Forecast from "./Forecast"
 import Footer from "./Footer"
 
 
-export default App; function App() {
+export default  function App() {
   return (
     <div className="App">
       <div className="container">
           <div className="row"> 
-              <div className="col-4" >
+              <div className="col-5" >
                 <Weather />
               </div>
               <div className="col">

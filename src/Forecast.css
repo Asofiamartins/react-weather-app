@@ -1,0 +1,17 @@
+.forecastInfo {
+    padding-bottom: 30px;
+}
+.forecastInfo p {
+    font-family: "lato", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+.forecastInfo img {
+  width: 60px;
+  margin: 20px;
+  margin: 0 auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}

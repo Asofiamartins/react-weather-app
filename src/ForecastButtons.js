@@ -1,9 +1,14 @@
 import React from "react";
-
+import "./ForecastButtons.css"
 
 
 
 
 export default function ForecastButtons(){
-    return (<p>2 butons lindes</p>);
+    return (
+    <div className="weatherButton">
+        <button className="dailyButton">Daily Forecast</button>
+        <button className="weeklyButton">Weekly Forecast</button>
+    </div>
+        );
 }
