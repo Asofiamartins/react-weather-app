@@ -19,7 +19,7 @@ export default function Weather(){
             <div className="row">
                 <div className="col">
                     <h1>22º<span className="units" >C|F</span></h1></div>
-                <div className="col"><h2>Lisbon</h2><p>Last update at ...</p></div>
+                <div className="col"><h2>Lisbon</h2><p>Last update at </p></div>
             </div>
         </div>
     </div>);

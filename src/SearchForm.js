@@ -1,26 +1,19 @@
 import React from "react";
-
-
-
-
+import "./SearchForm.css"
 
 export default function SearchForm(){
-    return (<div>
+    return (
+    <div className="Search">
+        <form className="search-form">
         <div className="row">
-        <div className="col"><form>
-            <input type="search" placeholder="The weather in..."
-            autoComplete="off"/>
-        </form></div>
-        <div className="col">
-            <input class="newcity-button" type="submit" value="New city" />
-              <input
-                class="currentcity-button"
-                id="currentcity-button"
-                type="submit"
-                value="Current City"
-              />
+            <div className="col-8">
+                <input className="city-input" type="search" placeholder="The weather in..." autoComplete="off" />
+            </div>
+            <div className="col-4">
+                <input className="newcity-button" type="submit" value="New city" />
+                <input className="currentcity-button" id="currentcity-button" type="submit" value="Current City"/>
+            </div>
         </div>
-        </div>
-        
+        </form>
     </div>);
 }

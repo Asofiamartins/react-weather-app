@@ -1,0 +1,42 @@
+.Search .newcity-button {
+  border-radius: 5px;
+  border: 1px solid #71827A;
+  background: #71827A;
+  color: #ffffff;
+  padding: 4px 10px;
+  margin-right: 10px;
+}
+.Search .newcity-button:hover {
+  border-radius: 5px;
+  border: 1px solid #4C5752;
+  background: rgba(189, 189, 189, 0.1);
+  color: #4C5752;
+  padding: 4px 10px;
+  
+}
+
+.Search .currentcity-button {
+  border-radius: 5px;
+  border: 1px solid #4A6561;
+  background: #4A6561;
+  color: #ffffff;
+  padding: 4px 10px;
+}
+.Search .currentcity-button:hover {
+  border-radius: 5px;
+  border: 1px solid #4A6561;
+  background: rgba(255, 255, 255, 0.1);
+  color: #4A6561;
+  padding: 4px 10px;
+}
+
+.Search .city-input {
+  width: 410px;
+  height: 35px;
+  border-radius: 4px;
+  border: 1px solid #BDC8C4;
+  font-size: 15px;
+  padding-left: 10px;
+  background-color: transparent;
+  
+}
