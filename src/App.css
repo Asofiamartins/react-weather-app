@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&family=Oswald:wght@400;700&display=swap');
+
+
+.App .container {
+padding: 30px;
+margin: 0 auto;
+max-width: 80%;
+font-family: "Oswald", sans-serif;
+font-weight: 700;
+
+}
+
+.row{
+    margin: 0 auto;
+    height: 500px;
+}
+.col-4 {
+    background-color: burlywood;
+    
+
+
+}
+
+.col {
+  background-color: blue; 
+  margin-left: 10px;
+  
+}
