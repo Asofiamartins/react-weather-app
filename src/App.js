@@ -22,8 +22,9 @@ export default App; function App() {
                 <Forecast />
               </div>
           </div>
-          <Footer/>
+         
       </div>
+      <Footer/>
     </div>
   );
 }

@@ -2,8 +2,6 @@ footer {
   font-size: 11px;
   line-height: 18px;
   padding-top: 20px;
-
-  color: #214552;
   text-align: center;
   font-family: "Lato", sans-serif;
   font-weight: 400;
@@ -14,7 +12,7 @@ footer a {
   
 }
 footer a:hover {
-  color: #395E6C;
+  color: #9A5229;
   text-decoration: none;
   font-weight: 700;
 }
