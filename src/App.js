@@ -1,6 +1,6 @@
 import './App.css';
 import Weather from "./Weather"
-import WeatherInfo from "./WeatherInfo"
+import WeatherDetails from "./WeatherDetails"
 import SearchForm from "./SearchForm"
 import ForecastButtons from "./ForecastButtons"
 import Forecast from "./Forecast"
@@ -11,21 +11,18 @@ export default App; function App() {
   return (
     <div className="App">
       <div className="container">
-
-            <div className="row"> 
-
-                <div className="col-4" >
+          <div className="row"> 
+              <div className="col-4" >
                 <Weather />
-                </div>
-
-                <div className="col">
+              </div>
+              <div className="col">
                 <SearchForm />
-                <WeatherInfo />
+                <WeatherDetails />
                 <ForecastButtons />
                 <Forecast />
-                </div>
               </div>
-           <Footer/>
+          </div>
+          <Footer/>
       </div>
     </div>
   );

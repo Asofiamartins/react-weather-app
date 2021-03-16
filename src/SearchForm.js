@@ -8,7 +8,7 @@ export default function SearchForm(){
     return (<div>
         <div className="row">
         <div className="col"><form>
-            <input type="search" placeholder="Enter a city..."
+            <input type="search" placeholder="The weather in..."
             autoComplete="off"/>
         </form></div>
         <div className="col">
