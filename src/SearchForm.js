@@ -1,8 +1,19 @@
 import React from "react";
+import axios from "axios";
 import "./SearchForm.css"
 
-export default function SearchForm(){
+export default function SearchForm(){ 
+    
+    function handleSearch(){
+        consol
+    }
+    const apiKey =`ad04f0e0df090e6f6edccedb580b7fca`;
+    let city ="Lisbon";
+    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+    axios.get(apiUrl).then(handleSearch);
     return (
+
+        
     <div className="Search">
         <form className="search-form">
         <div className="row">
