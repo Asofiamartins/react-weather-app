@@ -19,7 +19,7 @@ export default function Footer() {
         {" "}
         Sofia Martins
       </a>
-       {" "}| Icons by <a >blabla</a> and Illustration by <a>blabla</a>
+       {" "}| Icons by  and Illustration by 
     </footer>
   );
 }
