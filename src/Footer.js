@@ -19,7 +19,7 @@ export default function Footer() {
         {" "}
         Sofia Martins
       </a>
-       {" "}| Icons by  and Illustration by 
+       {" "}| Icons by  and Illustrations by <a href="https://vectorforfree.com/product/colorful-plant-illustration/" target="_blank" rel="noreferrer">vector for free</a>, <a href="https://vectorforfree.com/product/potted_plant_illustration_vectorforfree/" target="_blank" rel="noreferrer">vector for free</a> 
     </footer>
   );
 }
