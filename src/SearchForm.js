@@ -40,36 +40,34 @@ export default function SearchForm(props){
      }
     if (weatherData.ready){
         return ( 
-        
-        <div className="weatherApp">
-            <div className="row"> 
-                <div className="col-5" >
-                <Weather data={weatherData}/>
-                </div>
-                <div className="col">
-                    <div className="Search">
-                        <form className="search-form" onSubmit={handleSubmit}>
-                            <div className="row">
-                                <div className="col-7">
-                                    <input className="city-input" type="search" placeholder="The weather in..." autoComplete="off" onChange={updateCity}/>
+            <div className="weatherApp">
+                <div className="row"> 
+                    <div className="col-5" >
+                        <Weather data={weatherData}/>
+                     </div>
+                    <div className="col">
+                        <div className="Search">
+                            <form className="search-form" onSubmit={handleSubmit}>
+                                <div className="row">
+                                    <div className="col-7">
+                                    <   input className="city-input" type="search" placeholder="The weather in..." autoComplete="off" onChange={updateCity}/>
+                                    </div>
+                                    <div className="col">
+                                        <input className="newcity-button" type="submit" value="New city" />
+                                        <input className="currentcity-button" id="currentcity-button" type="submit" value="Current City"/>
+                                    </div>
                                 </div>
-                                <div className="col">
-                                    <input className="newcity-button" type="submit" value="New city" />
-                                    <input className="currentcity-button" id="currentcity-button" type="submit" value="Current City"/>
-                                </div>
-                            </div>
-                        </form>
-                        <WeatherDetails />
-                        <ForecastButtons />
-                        <Forecast />
+                            </form>
+                            <WeatherDetails />
+                            <ForecastButtons />
+                            <Forecast />
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>);
+            </div>);
 
     }
     else{
     search();
     return "Loading...";
-    
 }

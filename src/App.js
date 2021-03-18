@@ -1,8 +1,9 @@
+import React from "react";
+import SearchForm from "./SearchForm"
+import Footer from "./Footer"
 import './App.css';
 
-import SearchForm from "./SearchForm"
 
-import Footer from "./Footer"
 
 
 export default  function App() {
