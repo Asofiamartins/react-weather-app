@@ -1,0 +1,8 @@
+.formattedDate p {
+  margin: 0 auto;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 8.5px;
+  color: black;
+  text-align: left;
+}

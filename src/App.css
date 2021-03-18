@@ -1,15 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&family=Oswald:wght@400;700&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&family=Oswald:wght@400;700&display=swap");
 
 .App .container {
-padding: 30px;
-margin-top: 80px;
-top: 80px;
-height: 550px;
-width: 1000px;
-font-family: "Oswald", sans-serif;
-font-weight: 700;
-background-color:#E3E0DB;
-border-radius: 10px;
+  padding: 30px;
+  margin-top: 80px;
+  top: 80px;
+  height: 550px;
+  width: 1000px;
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
+  background-color: #e3e0db;
+  border-radius: 10px;
 }
+
 

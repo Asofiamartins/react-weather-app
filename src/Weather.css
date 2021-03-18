@@ -1,59 +1,57 @@
-.weather{
-    padding: 10px;
+.weather {
+  padding: 10px;
 }
 .weatherDescription p {
-    margin: 0 auto;
-    font-family: "Lato", sans-serif;
-    text-align: center;
-    font-weight: 400;
-    font-size: 14px;
-    color: black;
-    }
-.weather img{
-    width: 250px;
-    margin: 0 auto;
-    display: block;
-    padding: auto;
-   }
-.weatherInfo   {
-    margin: 0 auto;
-    display: inline-block;
-    padding-top: 40px;
-    padding-left: 15px;
-        
+  margin: 0 auto;
+  font-family: "Lato", sans-serif;
+  text-align: center;
+  font-weight: 400;
+  font-size: 14px;
+  color: black;
 }
-.weatherInfo .col{
-    padding-right: 0px;
-    
+.weather img {
+  width: 250px;
+  margin: 0 auto;
+  display: block;
+  padding: auto;
 }
-.weatherInfo h1{
-    font-family: "Oswald", sans-serif;
-    font-weight: 700;
-    font-size: 60px;
-    color: #9A5229;
-  }
-  .weatherInfo h2{
-    font-family: "Oswald", sans-serif;
-    font-size: 35px;
-    font-weight: 500;
-    color: #9A5229;
-    margin-bottom: 0;
-    padding-top: 10px;
-  }
-   .weatherInfo p{
-    font-family: "lato", sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    color: #9A5229;
-    line-height: 16px;
-    color: black;
-   }
+.weatherInfo {
+  margin: 0 auto;
+  display: inline-block;
+  padding-top: 40px;
+  padding-left: 15px;
+}
+.weatherInfo .col {
+  padding-right: 0px;
+}
+.weatherInfo h1 {
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
+  font-size: 55px;
+  color: #9a5229;
+}
+.weatherInfo h2 {
+  font-family: "Oswald", sans-serif;
+  font-size: 35px;
+  font-weight: 500;
+  color: #9a5229;
+  margin-bottom: 2px;
+  padding-top: 5px;
+}
+.weatherInfo p {
+  font-family: "lato", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #9a5229;
+  line-height: 16px;
+  color: black;
+}
 
 .weatherInfo .units {
-    position: relative;
-    top: -37px;
-    padding-left: 5px;
-    font-size: 15px;
-    font-weight: 500;
-    color: black;
+  position: relative;
+  top: -32px;
+  padding-left: 5px;
+  font-size: 15px;
+  font-weight: 500;
+  color: black;
 }
