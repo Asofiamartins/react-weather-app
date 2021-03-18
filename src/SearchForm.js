@@ -1,20 +1,29 @@
-import React from "react";
+import React, { useState } from "react";
 import axios from "axios";
 import "./SearchForm.css"
 
-export default function SearchForm(){ 
-    
-    function handleSearch(){
-        consol
-    }
-    const apiKey =`ad04f0e0df090e6f6edccedb580b7fca`;
-    let city ="Lisbon";
-    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
-    axios.get(apiUrl).then(handleSearch);
-    return (
-
+export default function SearchForm(props){ 
+        const [weatherData, setWeatherData] = useState({ready:false});
+        function handleSearch(response){
         
-    <div className="Search">
+        setWeatherData({
+        ready: true,
+        temperature: response.data.main.temp,
+        description: response.data.weather[0].main,
+        city: response.data.name,
+        humidity: response.data.main.humidity,
+        wind: response.data.wind.speed,
+        tempmax: response.data.main.temp_max,
+        tempmin: response.data.main.temp_min,
+        
+        date: "Thurday 5"
+    });   
+     }
+
+    if (weatherData.ready){
+        return (
+        <div className="Search">
+            <p>{weatherData.city} </p>
         <form className="search-form">
         <div className="row">
             <div className="col-7">
@@ -27,4 +36,14 @@ export default function SearchForm(){
         </div>
         </form>
     </div>);
+
+    }
+    else{
+    const apiKey =`ad04f0e0df090e6f6edccedb580b7fca`;
+    let city = props.defaultCity;
+    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+    axios.get(apiUrl).then(handleSearch);
+    }
+    return "Loading...";
+    
 }

@@ -16,7 +16,7 @@ export default  function App() {
                 <Weather />
               </div>
               <div className="col">
-                <SearchForm />
+                <SearchForm defaultCity="Lisbon"/>
                 <WeatherDetails />
                 <ForecastButtons />
                 <Forecast />
