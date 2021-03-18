@@ -3,7 +3,6 @@ import axios from "axios";
 import "./SearchForm.css"
 import Weather from "./Weather"
 import WeatherDetails from "./WeatherDetails"
-import ForecastButtons from "./ForecastButtons"
 import Forecast from "./Forecast"
 
 export default function SearchForm(props){ 
@@ -30,7 +29,7 @@ export default function SearchForm(props){
     let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
     axios.get(apiUrl).then(handleSearch);
     }
-     }
+     
      function handleSubmit(event) {
          event.preventDefaulr();
         search();
@@ -40,34 +39,34 @@ export default function SearchForm(props){
      }
     if (weatherData.ready){
         return ( 
-            <div className="weatherApp">
+            <div>
+                <div className="Search">
+                    <form className="search-form" onSubmit={handleSubmit}>
+                        <div className="row">
+                            <div className="col-7">
+                                <input className="city-input" type="search" placeholder="The weather in..." autoComplete="off" onChange={updateCity}/>
+                            </div>
+                            <div className="col">
+                                <input className="newcity-button" type="submit" value="New city" />
+                                <input className="currentcity-button" id="currentcity-button" type="submit" value="Current City"/>
+                            </div>
+                        </div>
+                        </form>
+                </div>
                 <div className="row"> 
                     <div className="col-5" >
                         <Weather data={weatherData}/>
                      </div>
                     <div className="col">
-                        <div className="Search">
-                            <form className="search-form" onSubmit={handleSubmit}>
-                                <div className="row">
-                                    <div className="col-7">
-                                    <   input className="city-input" type="search" placeholder="The weather in..." autoComplete="off" onChange={updateCity}/>
-                                    </div>
-                                    <div className="col">
-                                        <input className="newcity-button" type="submit" value="New city" />
-                                        <input className="currentcity-button" id="currentcity-button" type="submit" value="Current City"/>
-                                    </div>
-                                </div>
-                            </form>
+                        
                             <WeatherDetails />
-                            <ForecastButtons />
-                            <Forecast />
-                        </div>
+                             <Forecast />
+                        
                     </div>
                 </div>
             </div>);
 
-    }
+        }
     else{
     search();
-    return "Loading...";
-}
+    return "Loading...";}}

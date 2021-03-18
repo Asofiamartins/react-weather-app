@@ -1,6 +1,6 @@
 import React from "react";
 import './Weather.css';
-import "./FormattedDate"
+import FormattedDate from "./FormattedDate";
 export default function Weather(props){
    
     return (
@@ -13,7 +13,8 @@ export default function Weather(props){
             <div className="row">
                 <div className="col">
                     <h1>{props.weatherData.temperature}º<span className="units" >C|F</span></h1></div>
-                <div className="col"><h2>{props.weatherData.city}</h2><p><FormattedDate date={props.weatherData.date}/> </p></div>
+                <div className="col"><h2>{props.weatherData.city}</h2>
+                <FormattedDate date={props.weatherData.date}/></div>
             </div>
         </div>
     </div>);
