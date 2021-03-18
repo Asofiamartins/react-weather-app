@@ -11,17 +11,19 @@ export default function SearchForm(props){
 
 
     function handleSearch(response){
-        setWeatherData({
+        setWeatherData(
+        {
         ready: true,
         temperature: response.data.main.temp,
-        description: response.data.weather[0].main,
+        description: response.data.weather[0].description,
         city: response.data.name,
         humidity: response.data.main.humidity,
         wind: response.data.wind.speed,
         tempmax: response.data.main.temp_max,
         tempmin: response.data.main.temp_min,
-        date: newDate(response.data.dt*1000),
-    });   
+        date: newDate(response.data.dt * 1000),
+    }
+    );   
      }
      function search(){
     const apiKey =`ad04f0e0df090e6f6edccedb580b7fca`;
@@ -32,7 +34,7 @@ export default function SearchForm(props){
      
      function handleSubmit(event) {
          event.preventDefaulr();
-        search();
+        search(city);
      }
      function updateCity(event){
          setCity(event.target.value);
@@ -58,10 +60,8 @@ export default function SearchForm(props){
                         <Weather data={weatherData}/>
                      </div>
                     <div className="col">
-                        
-                            <WeatherDetails />
-                             <Forecast />
-                        
+                       <WeatherDetails />
+                       <Forecast />
                     </div>
                 </div>
             </div>);
