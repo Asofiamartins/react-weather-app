@@ -11,8 +11,7 @@ export default function SearchForm(props){
 
 
     function handleSearch(response){
-        setWeatherData(
-        {
+        setWeatherData({
         ready: true,
         temperature: response.data.main.temp,
         description: response.data.weather[0].description,
@@ -21,9 +20,8 @@ export default function SearchForm(props){
         wind: response.data.wind.speed,
         tempmax: response.data.main.temp_max,
         tempmin: response.data.main.temp_min,
-        date: newDate(response.data.dt * 1000),
-    }
-    );   
+        date: new Date(response.data.dt * 1000),
+    });   
      }
      function search(){
     const apiKey =`ad04f0e0df090e6f6edccedb580b7fca`;
@@ -33,7 +31,7 @@ export default function SearchForm(props){
     }
      
      function handleSubmit(event) {
-         event.preventDefaulr();
+         event.preventDefault();
         search(city);
      }
      function updateCity(event){
