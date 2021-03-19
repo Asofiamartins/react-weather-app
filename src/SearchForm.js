@@ -24,7 +24,8 @@ export default function SearchForm(props){
         date: new Date(response.data.dt * 1000),
         sunrise: response.data.sys.sunrise * 1000,
         sunset:  response.data.sys.sunset * 1000,
-        icon: `img/${response.data.weather[0].icon}.png`,
+        iconPlant: `img/${response.data.weather[0].icon}.png`,
+        icon:response.data.weather[0].icon
     });   
      }
       function handleSubmit(event) {
@@ -62,7 +63,7 @@ export default function SearchForm(props){
                             </form>
                         </div>
                             <WeatherDetails details={weatherData}/>
-                            <Forecast />
+                            <Forecast info={weatherData}/>
                     </div>
                     
                 </div>

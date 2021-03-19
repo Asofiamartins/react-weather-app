@@ -8,14 +8,14 @@ export default function Weather(props){
     return (
     <div className="weather">
         <div className="weatherDescription">
-            <img src={props.data.icon} alt="Monstera Deliciosa"/>
+            <img src={props.data.iconPlant} alt="Monstera Deliciosa"/>
             <p className="text-capitalize">{props.data.description}</p>
         </div>
         <div className="weatherInfo">
             <div className="row">
                 <div className="col-4">
                     <h1>{Math.round(props.data.temperature)}º<span className="units" >C|F</span></h1></div>
-                <div className="col"><h2>{props.data.city}</h2>
+                <div className="col"><h2>{props.data.city}</h2> 
                 <FormattedDate date={props.data.date}/>
                 </div>
             </div>

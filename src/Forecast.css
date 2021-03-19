@@ -1,16 +1,16 @@
 .forecastInfo {
-    padding-bottom: 30px;
+  padding-bottom: 30px;
 }
 .forecastInfo p {
-    font-family: "lato", sans-serif;
-    font-weight: 400;
-    font-size: 14px;
-    text-align: center;
-    margin-bottom: 5px;
+  font-family: "lato", sans-serif;
+  text-align: center;
+  margin-bottom: 5px;
+  font-weight: 400;
+  font-size: 12px;
 }
-.forecastInfo img {
-  width: 60px;
-  margin: 20px;
+
+.forecastInfo canvas {
+  display: block;
   margin: 0 auto;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -26,5 +26,19 @@
 
 .weatherButton {
   padding: 60px 0px 30px 0px;
- 
-  }
+}
+
+p.forecast {
+  font-size: 16px;
+  font-weight: bolder;
+}
+p.description {
+}
+p .maxTemp {
+  font-weight: 600;
+  font-size: 16px;
+}
+p .minTemp {
+  font-weight: 400;
+  font-size: 14px;
+}
