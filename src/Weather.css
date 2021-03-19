@@ -13,7 +13,7 @@
   width: 250px;
   margin: 0 auto;
   display: block;
-  padding: auto;
+  padding-bottom: 5px;
 }
 .weatherInfo {
   margin: 0 auto;
@@ -22,7 +22,7 @@
   padding-left: 15px;
 }
 .weatherInfo .col {
-  padding-right: 0px;
+  padding-right: 5px;
 }
 .weatherInfo h1 {
   font-family: "Oswald", sans-serif;
@@ -38,11 +38,10 @@
   margin-bottom: 2px;
   padding-top: 5px;
 }
-.weatherInfo p {
+.weatherDescription p {
   font-family: "lato", sans-serif;
   font-size: 14px;
   font-weight: 400;
-  color: #9a5229;
   line-height: 16px;
   color: black;
 }
@@ -53,5 +52,12 @@
   padding-left: 5px;
   font-size: 15px;
   font-weight: 500;
+  color: black;
+}
+.weatherInfo p {
+  font-family: "lato", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 16px;
   color: black;
 }

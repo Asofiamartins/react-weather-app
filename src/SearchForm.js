@@ -24,6 +24,7 @@ export default function SearchForm(props){
         date: new Date(response.data.dt * 1000),
         sunrise: response.data.sys.sunrise * 1000,
         sunset:  response.data.sys.sunset * 1000,
+        icon: `img/${response.data.weather[0].icon}.png`,
     });   
      }
       function handleSubmit(event) {
