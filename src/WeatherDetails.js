@@ -5,10 +5,11 @@ import  "./WeatherDetails.css";
 
 
 
+
 export default function WeatherDetails(props){
     return (
     <div className="WeatherDetails">
-        <h3>Details</h3> 
+        <h3>Details</h3>
         <div className="row">
                 <div className="col">
                     <p>Temperature: {Math.round(props.details.tempmin)} | {Math.round(props.details.tempmax)}</p>

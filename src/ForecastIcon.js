@@ -26,7 +26,7 @@ export default function ForescastIcon(props){
 
     return (
     <ReactAnimatedWeather
-    icon="CLEAR_DAY"
+    icon={codeMapping[props.code]}
     color="#4A6561"
     size={40}
     animate={true}

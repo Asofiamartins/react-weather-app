@@ -1,6 +1,6 @@
 footer {
   font-size: 11px;
-  line-height: 19px;
+  line-height: 16px;
   padding-top: 20px;
   text-align: center;
   font-family: "Lato", sans-serif;
@@ -11,8 +11,11 @@ footer a {
   color: black;
 }
 footer a:hover {
-  color: #9A5229;
+  color: #9a5229;
   text-decoration: none;
   font-weight: 700;
 }
-
+footer p {
+  padding: 0px;
+  margin-bottom: 5px;
+}
