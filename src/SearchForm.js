@@ -72,7 +72,7 @@ export default function SearchForm(props){
                                     </div>
                                     <div className="col">
                                         <input className="newcity-button" type="submit" value="New city" />
-                                        <input className="currentcity-button" id="currentcity-button" type="submit" value="Current City" onClick="{getPosition}"/>
+                                        <input className="currentcity-button" id="currentcity-button" type="submit" value="Current City" onClick={getPosition}/>
                                     </div>
                                 </div>
                             </form>
