@@ -18,7 +18,7 @@ setUnit("fahrenheit");
 if (unit === `celsius`) {
 return (
 <div className="WeatherTemperature">
-    <span className="currentTemperature">{Math.round(props.celsius)}</span>
+    <span className="currentTemperature">{Math.round(props.celsius)}º</span>
     <span className="units">
         <a href="/" onClick={displayCelsius} className="active">ºC</a>
         {" "}|{" "}
@@ -31,7 +31,11 @@ let fahrenheit = (props.celsius * 9/5) +32;
 return (
 <div className="WeatherTemperature">
     <span className="currentTemperature">{Math.round(fahrenheit)}</span>
-    <span className="units"><a href="/" onClick={displayCelsius}>ºC</a>{" "}| <a  href="/" onClick={displayFahrenheit} className="active">ºF</a></span>
+    <span className="units">
+        <a href="/" onClick={displayCelsius}>ºC</a>
+        {" "}| 
+        <a  href="/" onClick={displayFahrenheit} className="active">ºF</a>
+    </span>
     
 </div>);
 }

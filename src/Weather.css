@@ -1,6 +1,6 @@
 .weatherDescription p {
   margin: 0 auto;
- font-family: "Oswald", sans-serif;
+  font-family: "Oswald", sans-serif;
   text-align: center;
   font-weight: 500;
   padding-left: 15px;
@@ -29,6 +29,9 @@
 .weatherInfo .col.align-self-end {
   padding: 0px;
   margin: 0 auto;
+  position: absolute;
+  left: 148px;
+  bottom: 22px;
 }
 
 .weatherInfo h2 {
@@ -38,7 +41,6 @@
   color: #9a5229;
   margin-bottom: 8px;
   padding-top: 5px;
-  padding-left: 10px;
 }
 
 .weatherInfo p {

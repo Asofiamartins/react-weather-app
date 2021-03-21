@@ -6,9 +6,9 @@ span.currentTemperature {
   color: #9a5229;
 }
 .WeatherTemperature span.units {
-  position: relative;
-  top: -30px;
-  left: 5px;
+  position: absolute;
+  bottom: 64px;
+  left: 103px;
   padding-left: 0px;
   margin: 0 auto;
   font-size: 14px;
@@ -21,22 +21,17 @@ span.currentTemperature {
   color: black;
 }
 
-.units .active {
-  font-weight: 800;
-  text-decoration: none;
-  color: #9a5229;
-}
-.units .active:hoover {
-  font-weight: 800;
-  text-decoration: none;
-  color: #9a5229;
-}
-
 .units a:hoover {
   text-decoration: none;
   color: black;
 }
-
-.units a:visited {
+.units a.active {
+  font-weight: 800;
   text-decoration: none;
+  color: #9a5229;
+}
+.units a.active:hoover {
+  font-weight: 800;
+  text-decoration: none;
+  color: #9a5229;
 }

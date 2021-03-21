@@ -2,6 +2,8 @@ import React, {useState} from "react";
 import axios from "axios"
 import "./Forecast.css"
 import ForecastPreview from "./ForecastPreview";
+import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
+import Loader from "react-loader-spinner";
 
 
 
@@ -17,8 +19,8 @@ export default function Forecast(props){
   if (loaded && props.city === forecast.city.name) {
     return (<div>
         <div className="weatherButton">
-          <button className="dailyButton" onClick={displayForecast}>Daily Forecast</button>
-          <button className="weeklyButton">Weekly Forecast</button>
+          <button className="dailyButton" >Daily Forecast</button>
+          
         </div>
         <div className="forecastInfo row">
         <ForecastPreview data={forecast.list[0]}/> 
@@ -34,7 +36,12 @@ export default function Forecast(props){
 
   axios.get(forecastUrl).then(displayForecast);
 
-    return null;
+    return <Loader
+        type="ThreeDots"
+        color="#9a5229"
+        height={60}
+        width={60}
+        />;
       
 
   }

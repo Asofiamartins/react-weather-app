@@ -11,3 +11,10 @@
   background-color: #e3e0db;
   border-radius: 10px;
 }
+.App a {
+  text-decoration: none;
+  color: black;
+}
+.App a {
+  text-decoration: none;
+}
