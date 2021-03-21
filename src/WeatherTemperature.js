@@ -18,7 +18,7 @@ setUnit("fahrenheit");
 if (unit === `celsius`) {
 return (
 <div className="WeatherTemperature">
-    <span className="currentTemperature">{Math.round(props.celsius)}º</span>
+    <span className="currentTemperature">{Math.round(props.celsius)}</span>
     <span className="units">
         <a href="/" onClick={displayCelsius} className="active">ºC</a>
         {" "}|{" "}

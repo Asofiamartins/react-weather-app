@@ -8,18 +8,17 @@ span.currentTemperature {
 .WeatherTemperature span.units {
   position: absolute;
   bottom: 64px;
-  left: 103px;
+  left: 86px;
   padding-left: 0px;
   margin: 0 auto;
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 800;
   color: black;
 }
 
 span.units a:link {
   text-decoration: none;
   color: black;
-  font-weight: 400;
 }
 
 span.units a:hoover {
@@ -31,7 +30,6 @@ span.units a:visited {
   color: black;
 }
 span.units a.active {
-  font-weight: 800;
   text-decoration: none;
   color: #9a5229;
 }
