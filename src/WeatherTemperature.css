@@ -10,7 +10,7 @@ span.currentTemperature {
 .WeatherTemperature span.units {
   position: absolute;
   bottom: 64px;
-  left: 86px;
+  left: 77px;
   padding-left: 0px;
   margin: 0 auto;
   font-size: 14px;
