@@ -23,10 +23,10 @@
   margin-bottom: 20px;
   margin-top: 40px;
 }
-.weatherInfo .col-03 {
+.weatherInfo .col-3 {
   margin-left: 10px;
 }
-.weatherInfo .col.align-self-end {
+.weatherInfo .col {
   padding: 0px;
   margin: 0 auto;
   position: absolute;

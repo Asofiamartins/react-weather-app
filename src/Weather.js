@@ -16,7 +16,7 @@ export default function Weather(props){
                 <div className="col-03">
                 <WeatherTemperature celsius={props.data.temperature}/>
                 </div>
-                <div class="col align-self-end"><h2>{props.data.city}</h2></div>
+                <div class="col"><h2>{props.data.city}</h2></div>
              </div>
         </div>
     </div>);
