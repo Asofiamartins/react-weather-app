@@ -15,12 +15,12 @@ span.currentTemperature {
   font-size: 55px;
   color: #9a5229;
 }
-.units a.active {
+.units .active {
   font-weight: 800;
   text-decoration: none;
   color: #9a5229;
 }
-.units a.active:hoover {
+.units .active:hoover {
   font-weight: 800;
   text-decoration: none;
   color: #9a5229;
@@ -31,11 +31,9 @@ span.currentTemperature {
 }
 .units a:hoover {
   text-decoration: none;
-  color: #fff;
+  color: black;
 }
-.units a:focus {
-  text-decoration: none;
-}
-.units a:host {
+
+.units a:visited {
   text-decoration: none;
 }

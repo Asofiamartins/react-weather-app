@@ -24,7 +24,7 @@ return (
        <div className="ForecastPreview col">
                 <p className="forecast">{hours()}</p>
                 <ForecastIcon code={props.data.weather[0].icon}/>
-                <p className="text-capitalize">(sun)</p>
+                <p className="text-capitalize">{(props.data.weather[0].main)}</p>
                 <p><span className="TemperatureMax">{TemperatureMax()}</span>|<span className="TemperatureMin">{TemperatureMin()}</span></p>
               </div>
                
