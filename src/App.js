@@ -2,7 +2,7 @@ import React from "react";
 import SearchForm from "./SearchForm"
 import Footer from "./Footer"
 import './App.css';
-import "bootstrap/dist/css/bootstrap.css";
+
 
 
 
