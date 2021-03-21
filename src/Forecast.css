@@ -1,7 +1,7 @@
 .forecastInfo {
   padding-bottom: 0;
   position: relative;
-  bottom: -40px;
+  bottom: -15px;
 }
 .forecastInfo p {
   font-family: "lato", sans-serif;
@@ -29,7 +29,7 @@
 
 .weatherButton {
   position: relative;
-  bottom: -40px;
+  bottom: -15px;
   padding: 45px 0px 35px 0px;
 }
 
@@ -38,11 +38,11 @@ p.forecast {
   font-weight: bolder;
 }
 
-p .maxTemp {
+p .TemperatureMax {
   font-weight: 600;
-  font-size: 16px;
+  font-size: 15px;
 }
-p .minTemp {
+p .TemperatureMin {
   font-weight: 400;
-  font-size: 14px;
+  font-size: 15px;
 }

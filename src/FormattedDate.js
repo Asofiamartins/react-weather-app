@@ -23,5 +23,5 @@ export default function FormattedDate(props) {
     if (minutes < 10){
         minutes = `0${minutes}`;
     }
-    return (<div className="formattedDate"><span>Last updated: {weekday} | {hours}:{minutes}</span></div>);
+    return (<div className="formattedDate"><span>Last updated: {weekday} | {hours}:{minutes}h</span></div>);
 }

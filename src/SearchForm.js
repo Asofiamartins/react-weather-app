@@ -4,7 +4,8 @@ import "./SearchForm.css"
 import Weather from "./Weather"
 import WeatherDetails from "./WeatherDetails"
 import Forecast from "./Forecast"
-
+import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
+import Loader from "react-loader-spinner";
 
 export default function SearchForm(props){ 
     const [weatherData, setWeatherData] = useState({ready:false});
@@ -22,6 +23,7 @@ export default function SearchForm(props){
         tempmax: response.data.main.temp_max,
         tempmin: response.data.main.temp_min,
         date: new Date(response.data.dt * 1000),
+        feels: response.data.main.feels_like,
         sunrise: response.data.sys.sunrise * 1000,
         sunset:  response.data.sys.sunset * 1000,
         iconPlant: `img/${response.data.weather[0].icon}.png`,
@@ -35,11 +37,25 @@ export default function SearchForm(props){
     setCity(event.target.value);
      }
     function search(){
-    const apiKey =`ad04f0e0df090e6f6edccedb580b7fca`;
+    const apiKey =`7b07bb1f8b7dcb2a54cfc50f9ead4b60`;
     let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
     axios.get(apiUrl).then(handleSearch);
     }
-     
+    
+    function showPosition(position){
+    const apiKey =`7b07bb1f8b7dcb2a54cfc50f9ead4b60`;
+    let latitude = position.coords.latitude;
+    let longitude = position.coords.longitude
+    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=metric`;
+    
+    axios.get(apiUrl).then(handleSearch);
+    }
+    
+    function getPosition(event){
+    event.preventDefault();
+    navigator.geolocation.getCurrentPosition(showPosition);
+    }
+
     if (weatherData.ready){
         return ( 
             <div>
@@ -56,7 +72,7 @@ export default function SearchForm(props){
                                     </div>
                                     <div className="col">
                                         <input className="newcity-button" type="submit" value="New city" />
-                                        <input className="currentcity-button" id="currentcity-button" type="submit" value="Current City"/>
+                                        <input className="currentcity-button" id="currentcity-button" type="submit" value="Current City" onClick="{getPosition}"/>
                                     </div>
                                 </div>
                             </form>
@@ -72,4 +88,9 @@ export default function SearchForm(props){
         }
     else{
     search();
-    return "Loading...";}}
+    return <Loader
+        type="ThreeDots"
+        color="#9a5229"
+        height={60}
+        width={60}
+        />}}
