@@ -1,5 +1,7 @@
 .forecastInfo {
-  padding-bottom: 30px;
+  padding-bottom: 0;
+  position: relative;
+  bottom: -40px;
 }
 .forecastInfo p {
   font-family: "lato", sans-serif;
@@ -26,6 +28,8 @@
 }
 
 .weatherButton {
+  position: relative;
+  bottom: -40px;
   padding: 45px 0px 35px 0px;
 }
 

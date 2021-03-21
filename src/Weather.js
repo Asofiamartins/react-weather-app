@@ -9,7 +9,7 @@ export default function Weather(props){
     <div className="weather">
         <div className="weatherDescription">
             <img src={props.data.iconPlant} alt={props.data.description}/>
-            <p className="text-capitalize">{props.data.description}</p>
+            <p className="text-capitalize"> {props.data.description}</p>
         </div>
         <div className="weatherInfo">
             <div className="row">
