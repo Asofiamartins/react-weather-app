@@ -17,7 +17,7 @@ export default function Forecast(props){
   if (loaded && props.city === forecast.city.name) {
     return (<div>
         <div className="weatherButton">
-          <button className="dailyButton">Daily Forecast</button>
+          <button className="dailyButton" onClick={displayForecast}>Daily Forecast</button>
           <button className="weeklyButton">Weekly Forecast</button>
         </div>
         <div className="forecastInfo row">

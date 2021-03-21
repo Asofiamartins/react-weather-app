@@ -1,3 +1,10 @@
+span.currentTemperature {
+  padding-right: 0px;
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
+  font-size: 55px;
+  color: #9a5229;
+}
 .WeatherTemperature span.units {
   position: relative;
   top: -30px;
@@ -8,13 +15,12 @@
   font-weight: 400;
   color: black;
 }
-span.currentTemperature {
-  padding-right: 0px;
-  font-family: "Oswald", sans-serif;
-  font-weight: 700;
-  font-size: 55px;
-  color: #9a5229;
+
+.units a {
+  text-decoration: none;
+  color: black;
 }
+
 .units .active {
   font-weight: 800;
   text-decoration: none;
@@ -25,10 +31,7 @@ span.currentTemperature {
   text-decoration: none;
   color: #9a5229;
 }
-.units a {
-  text-decoration: none;
-  color: black;
-}
+
 .units a:hoover {
   text-decoration: none;
   color: black;
