@@ -13,8 +13,10 @@
 }
 .App a {
   text-decoration: none;
-  color: black;
 }
-.App a {
+.App a:visited {
+  text-decoration: none;
+}
+.App a:hover {
   text-decoration: none;
 }

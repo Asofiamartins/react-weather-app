@@ -33,7 +33,7 @@ return (
     <span className="currentTemperature">{Math.round(fahrenheit)}</span>
     <span className="units">
         <a href="/" onClick={displayCelsius}>ºC</a>
-        {" "}| 
+        {" "}|{" "}
         <a  href="/" onClick={displayFahrenheit} className="active">ºF</a>
     </span>
     

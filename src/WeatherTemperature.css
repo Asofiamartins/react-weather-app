@@ -19,6 +19,7 @@ span.currentTemperature {
 .units a {
   text-decoration: none;
   color: black;
+  font-weight: 400;
 }
 
 .units a:hoover {
