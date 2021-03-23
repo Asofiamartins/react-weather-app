@@ -15,28 +15,20 @@ span.currentTemperature {
   font-weight: 800;
   color: black;
 }
-
-span.units a {
+.units a {
   text-decoration: none;
   color: black;
 }
-span.units a:link {
-  text-decoration: none;
-  color: black;
-}
-span.units a:hoover {
-  text-decoration: none;
-  color: black;
-}
-span.units a:visited {
-  text-decoration: none;
-  color: black;
-}
-span.units a:active {
+.units a:hoover {
   text-decoration: none;
   color: #9a5229;
 }
-a.active {
+.units a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+.units a.active {
   text-decoration: none;
   color: #9a5229;
 }
