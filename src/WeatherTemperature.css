@@ -32,11 +32,11 @@ span.units a:visited {
   text-decoration: none;
   color: black;
 }
-span.units a.active {
+span.units a:active {
   text-decoration: none;
   color: #9a5229;
 }
-span.units a.active:visited {
+a.active {
   text-decoration: none;
-  color: black;
+  color: #9a5229;
 }
