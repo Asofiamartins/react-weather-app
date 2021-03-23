@@ -1,5 +1,3 @@
-
-
 span.currentTemperature {
   padding-right: 0px;
   font-family: "Oswald", sans-serif;
@@ -18,7 +16,7 @@ span.currentTemperature {
   color: black;
 }
 
-span.units a:link {
+span.units a {
   text-decoration: none;
   color: black;
 }
@@ -32,11 +30,6 @@ span.units a:visited {
   color: black;
 }
 span.units a.active {
-  text-decoration: none;
-  color: #9a5229;
-}
-span.units a.active:hoover {
-  font-weight: 800;
   text-decoration: none;
   color: #9a5229;
 }
