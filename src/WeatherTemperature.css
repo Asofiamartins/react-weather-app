@@ -20,7 +20,10 @@ span.units a {
   text-decoration: none;
   color: black;
 }
-
+span.units a:link {
+  text-decoration: none;
+  color: black;
+}
 span.units a:hoover {
   text-decoration: none;
   color: black;
@@ -32,4 +35,8 @@ span.units a:visited {
 span.units a.active {
   text-decoration: none;
   color: #9a5229;
+}
+span.units a.active:visited {
+  text-decoration: none;
+  color: black;
 }
