@@ -91,6 +91,6 @@ export default function SearchForm(props){
     return <Loader
         type="ThreeDots"
         color="#9a5229"
-        height={60}
-        width={60}
+        height={10}
+        width={10}
         />}}
