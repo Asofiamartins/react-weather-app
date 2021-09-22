@@ -23,6 +23,7 @@ export default function Forecast(props){
           
         </div>
         <div className="forecastInfo row">
+        
         <ForecastPreview data={forecast.list[0]}/> 
         <ForecastPreview data={forecast.list[1]}/>
         <ForecastPreview data={forecast.list[2]}/>
